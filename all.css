@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+    font-family: 'Fira Sans', Arial, sans-serif;
+    color: #141414;
+}
+
+h1,h2,h3,p {
+    margin: 0px;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.subtitulo {
+    font-size: 8rem;
+    line-height: 1;
+    text-transform: uppercase; /*Todas em letras maiusculas*/
+    word-break: break-all; /*Quebrar as palavras*/
+    max-width: 4ch; /*Quantidade de letras para quebrar*/
+}
+
+@media (max-width: 800px) {
+    .subtitulo {
+        font-size: 3rem; /*16 X 3*/
+        text-transform: capitalize; /*Serve para aumentar apenas a primeira letra*/
+        max-width: initial;
+    }
+    
+    
+}

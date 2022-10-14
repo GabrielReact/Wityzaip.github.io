@@ -1,0 +1,67 @@
+.introdução {
+    max-width: 1200px; 
+    padding: 40px 20px;/*Cima baixo, lado outro*/
+    margin: 0 auto; /*Alinhar eles*/
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+.lobo {
+    max-width: 100%;
+    display: block;
+}
+
+.introdução h1 {
+    font-size: 4.5rem;
+    line-height: 1.25; /*Esse numero é relativo ao valor de cima, poderia ser PX*/
+    margin-bottom: 30px;
+    position: relative; /*Elemento Pai*/
+}
+
+.introdução h1::before { /*Usou o before para criar o elemento apenas com CSS*/
+    content: ''; /*Preciso disso para o before*/
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url(img/detalhe.svg) no-repeat center;
+    position: absolute; /*Elmento Filho*/
+    z-index: -1; /*Para ficar abaixo do conteudo*/
+    top: -15px;
+    left: -40px;  
+}
+
+.introdução p {
+    font-size: 1.5rem;
+    color: #525252;
+}
+
+@media (max-width: 1000px) {
+    .introdução h1 {
+        font-size: 3rem; /*Diminundo o tamnho da tipografia*/
+    }
+}
+
+@media (max-width: 800px) {
+    .introdução {
+        grid-template-columns: 1fr 1fr; /*Deixar imagem e texto com o mesmo tamnho*/
+        gap: 40px; /*Diminuir gap*/
+        font-size: 2rem;
+    }
+    .introdução h1::before {
+        width: 80px;
+        height: 10px;
+        left: 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    .introdução {
+        grid-template-columns: 1fr;
+    }
+    .introdução img {
+        display: none;
+    }
+}
+
+
