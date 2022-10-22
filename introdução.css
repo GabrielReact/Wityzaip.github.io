@@ -3,13 +3,30 @@
     padding: 40px 20px;/*Cima baixo, lado outro*/
     margin: 0 auto; /*Alinhar eles*/
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .lobo {
     max-width: 100%;
     display: block;
+}
+
+
+.icons {
+    display: flex;
+    flex-wrap: wrap; /*Ajuda a deixar responsivo*/
+    padding: 20px;
+    gap: 20px;
+    justify-content: center; /*Para deixar o conteudo no centro, responsividade*/
+}
+
+.icons img {
+    width: 50px;
+    max-width: 100%;
 }
 
 .introdução h1 {
@@ -27,8 +44,8 @@
     background: url(img/detalhe.svg) no-repeat center;
     position: absolute; /*Elmento Filho*/
     z-index: -1; /*Para ficar abaixo do conteudo*/
-    top: -15px;
-    left: -40px;  
+    top: -10px;
+    left: -38px;  
 }
 
 .introdução p {

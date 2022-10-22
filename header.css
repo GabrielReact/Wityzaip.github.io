@@ -20,12 +20,22 @@
     line-height: 1.3;; /*Altura de linha*/
     padding: 10px 20px; /*10 = Cima e baixo, 20 = cada lado, isso para aumentar a area de clique*/
     text-decoration: none; /*Tirar a decoração*/
-    color: #140031;
+    /* color: #140031; */
+    color: linear-gradient(135deg, #5806d3, #140031);
     display: block;
 }
 
 .header-menu a:hover {
     color: aqua;
+}
+
+.nome {
+    font-size: 1.2rem;
+    line-height: 1rem;
+}
+
+header,span {
+    color: white;
 }
 
 .logo {
